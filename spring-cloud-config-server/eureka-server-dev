@@ -1,0 +1,15 @@
+# 注册中心配置
+
+eureka:
+  server:
+     enableSelfPreservation: false
+     evictionIntervalTimerInMs: 1000
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    healthcheck:
+             enable: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

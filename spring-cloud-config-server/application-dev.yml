@@ -1,0 +1,9 @@
+
+eureka:
+  host: localhost
+  port: 8762
+  client:
+    healthcheck:
+             enable: true
+    serviceUrl:
+      defaultZone: http://${eureka.hostname}:${eureka.port}/eureka/
