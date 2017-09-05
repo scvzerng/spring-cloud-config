@@ -6,4 +6,4 @@ eureka:
     healthcheck:
              enable: true
     serviceUrl:
-      defaultZone: http://${eureka.hostname}:${eureka.port}/eureka/
+      defaultZone: http://localhost:8762/eureka/
