@@ -1,4 +1,3 @@
-
 eureka:
   host: localhost
   port: 8762
