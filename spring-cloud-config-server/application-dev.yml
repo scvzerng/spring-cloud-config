@@ -6,3 +6,9 @@ eureka:
              enable: true
     serviceUrl:
       defaultZone: http://localhost:8762/eureka/
+spring:
+  stream:
+    kafka:
+      binder:
+         broker: localhost:9092
+         zkNodes: localhost:2181
