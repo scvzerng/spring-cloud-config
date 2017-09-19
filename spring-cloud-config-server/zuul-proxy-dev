@@ -1,0 +1,10 @@
+zuul:
+  prefix: /api/
+  retryable: false
+  routes:
+      users:
+         path: users/** #需要映射的uri
+         url: http://localhost:8080 #需要转发到的服务ID
+      users-consumer:
+         path: consumers/**
+         url: http://localhost:9000
